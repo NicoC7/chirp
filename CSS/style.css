@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --blueColor: #1da1f2;
+  --lightBluecolor: #88cbf562;
+  --lightGrey: rgb(77, 76, 76);
+  --WarmColor: hsl(38, 50%, 97%);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body header {
+  font-family: "Inter", sans-serif;
+  background-color: var(--WarmColor);
+  padding: 1.5rem 2rem;
+  padding-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 100%;
+  align-items: center;
+  align-self: center;
+}
+
+header .logo,
+.footer .logo {
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #1da1f2;
+  font-weight: 600;
+  font-size: 1rem;
+  font-style: italic;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+}
+
+header .Toggle {
+  display: none;
+}
+
+nav {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: var(--lightGrey);
+  margin: 0.5rem;
+}
+
+nav a:hover {
+  color: var(--lightBluecolor);
+}
+
+
+.signinBtn {
+  height: 5rem;
+  padding: 1rem 1.5rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--blueColor);
+}
+
+.signinBtn a,
+.signinBtn a i {
+  align-items: center;
+  align-self: center;
+  color: white;
+  margin: auto 0.5rem;
+}
+
+.signinBtn:hover {
+  opacity: 0.75;
+}
+
+.Home {
+  background-color: var(--WarmColor);
+  height: 100;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.HomeInfo {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: auto;
+}
+
+.HomeInfo h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.HomeInfo p {
+  color: var(--lightGrey);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.Homebtns {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+
+#LearnMore {
+  display: flex;
+  color: var(--blueColor);
+}
+
+#LearnMore h4 {
+  margin: 0 0.5rem;
+}
+
+#LearnMore a h4 i {
+  font-weight: 600;
+}
+
+.users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UsersAvatarts {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  align-self: center;
+  justify-content: left;
+  padding: 0.5rem;
+}
+
+.UsersAvatarts img {
+  position: absolute;
+  width: 35px;
+}
+
+.UsersAvatarts img:nth-child(2) {
+  transform: translateX(+1rem);
+}
+
+.UsersAvatarts img:nth-child(3) {
+  transform: translateX(+2rem);
+}
+.UsersAvatarts img:nth-child(4) {
+  transform: translateX(+3rem);
+}
+.UsersAvatarts img:nth-child(5) {
+  transform: translateX(+4rem);
+}
+.UsersAvatarts img:nth-child(6) {
+  transform: translateX(+5rem);
+}
+.UsersAvatarts img:nth-child(7) {
+  transform: translateX(+6rem);
+}
+.UsersAvatarts img:nth-child(8) {
+  transform: translateX(+7rem);
+}
+.UsersAvatarts img:nth-child(9) {
+  transform: translateX(8rem);
+}
+
+.users p span {
+  color: var(--blueColor);
+  font-weight: 600;
+}
+
+.Hero {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  min-height: 70vh;
+  width: 100%;
+  background: url('../IMG/HeroImageDesktopView.png');  
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Features {
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: left;
+}
+
+.FeaturesHeader {
+  background: transparent;
+  width: 30%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.FeatureDetails {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FeatureDetails .FeatureCard {
+  width: 45%;
+  margin: 1rem;
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid rgba(105, 105, 105, 0.596);
+  border-radius: 5px;
+}
+
+.FeatureCard img {
+  margin-bottom: 0.5rem;
+}
+
+.FeatureCard h5 {
+  margin: 0.5rem auto;
+  font-size: 1.15rem;
+}
+.FeatureCard p {
+  color: var(--lightGrey);
+  font-size: 1rem;
+}
+
+.Customers {
+  width: 100%;
+  background: var(--lightBluecolor);
+  padding: 5rem;
+}
+
+.Customers h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem auto;
+}
+
+.Customers .Holder {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.say {
+  padding: 1.5rem 1rem;
+  background: white;
+  width: 30%;
+  border: 1px solid rgba(255, 255, 255, 0.884);
+  border-radius: 5px;
+  justify-self: auto;
+}
+
+.sayHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sayHeader img:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+.sayHeader .sayimg {
+  margin-left: auto;
+}
+
+.sayHeader img:nth-child(1) {
+  width: 50px;
+}
+.sayHeader aside h5 {
+  color: black;
+  margin: 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.sayHeader aside span {
+  color: var(--lightGrey);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.say p {
+  line-height: 1.5;
+  color: var(--lightGrey);
+  margin-bottom: 0.5rem;
+}
+
+.Holder .say footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  color: var(--lightGrey);
+}
+
+.Holder .say footer p {
+  margin-left: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.say footer .date {
+  margin-left: auto;
+  color: var(--lightGrey);
+}
+
+.Pricing {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.PricingHeader {
+  width: 400px;
+  padding: 0.5rem;
+}
+
+.PricingHeader h2 {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.PricingHeader p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+  color: var(--lightGrey);
+}
+
+.PricingCard {
+  background: hsl(38, 50%, 97%);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid hsl(38, 100%, 57%);
+  border-radius: 5px;
+}
+
+.cardheader {
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.425);
+}
+.cardheader p {
+  color: grey;
+  text-align: left;
+}
+
+.cardheader p span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+ul {
+  width: 90%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.425);
+  list-style-image: url('../Assets/Checkmark.svg');
+  list-style-position: outside;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul li {
+  text-align: justify;
+  color: var(--lightGrey);
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.PricingCard button {
+  width: 80%;
+  align-self: center;
+  margin: 0.5rem auto;
+}
+
+body .footer {
+  width: 100%;
+  background: var(--lightBluecolor);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FooterLinks {
+  letter-spacing: 1px;
+}
+.FooterLinks a {
+  color: black;
+  margin-left: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* media queries */
+
+
+@media only screen and (max-width: 850px) {
+  body header {
+    padding: 2rem;
+  }
+
+  .Home {
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+
+  .HomeInfo {
+    width: 90%;
+  }
+
+  .Hero {
+    max-width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    background: url('../IMG/HeroImageTabletView.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: unset;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .FeatureDetails .FeatureCard {
+    width: 100%;
+    line-height: 2;
+  }
+
+  .FeaturesHeader {
+    width: 50%;
+  }
+
+  .Customers {
+    padding: 2rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Customers h3 {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    text-align: left;
+  }
+  .Customers .Holder {
+    margin: unset;
+    height: fit-content;
+    overflow: hidden;
+    overflow-x: scroll;
+    justify-content: space-between;
+  }
+
+  .Holder::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .say {
+    width: initial;
+    min-width: 45%;
+    margin: 0 1rem;
+    perspective-origin: top;
+  }
+
+  .PricingCard {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body header {
+    padding: 0.5rem 1rem;
+    position: relative;
+    align-items: center;
+  }
+
+  header .logo {
+    margin-left: 0.5rem;
+  }
+
+  header .btns button {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%; 
+    height: 100vh;
+    background-color: var(--WarmColor);
+    z-index: 10;
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mobile-menu.Show {
+    transform: translateX(0); 
+  }
+
+  body.mobile-menu-open {
+    overflow: hidden; 
+  }
+  
+  .mobile-menu-open #content-container {
+    opacity: 0.25; 
+    pointer-events: none; 
+  }
+  
+
+.navigation {
+  position: absolute;
+  display: none;
+  top: 10vh;
+  width: 100%;
+  height: auto;
+  right: 0;
+  left: 0;
+  align-self: center;
+  background-color: transparent;
+  transition: all ease-in 0.8s;
+  z-index: -5;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.navigation.Show {
+  background-color: var(--WarmColor);
+  height: 100%; 
+  opacity: 1;
+  z-index: 5;
+  pointer-events: all;
+  transition: all ease-in 0.8s;
+}
+
+
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem auto;
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--blueColor);
+    color: white;
+    box-shadow: 0.5rem 0.5rem 2rem var(--WarmColor), -0.5rem -0.5rem 2rem var(--WarmColor);
+  }
+
+  header .Toggle {
+    display: block;
+    cursor: pointer;
+    pointer-events: all;
+    width: 2rem;
+    height: 2rem;
+    background: url('../Assets/HamburgerMenu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Home {
+    padding: 1rem 0.5rem;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .Hero {
+    background: url('../IMG/HeroImageTabletView.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 1rem;
+  }
+
+  .HomeInfo {
+    width: 100%;
+  }
+
+  .HomeInfo h1 {
+    font-size: 2rem;
+  }
+
+  .HomeInfo .Homebtns {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Homebtns button {
+    width: 99%;
+    align-self: center;
+  }
+
+  .Features {
+    max-width: 100vw;
+    width: 100%;
+    padding: 2rem 0.5rem;
+  }
+
+  .Features .FeaturesHeader {
+    width: 99%;
+  }
+
+  .FeatureDetails {
+    width: 99%;
+    padding: 0;
+  }
+
+  .FeatureCard {
+    width: 100%;
+    padding: unset;
+  }
+
+  .Customers {
+    padding: 2rem 0.5rem;
+  }
+
+  .Customers h3 {
+    width: 100%;
+  }
+
+  .Customers .Holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.25rem;
+    overflow: hidden;
+  }
+
+  .say {
+    margin-bottom: 1rem;
+    width: 98%;
+  }
+
+  .Pricing {
+    width: 100vw;
+    padding: 0.5rem;
+  }
+
+  .Pricing .PricingHeader {
+    width: 99%;
+  }
+
+  .PricingCard {
+    width: 99%;
+  }
+
+  .Pricing button {
+    width: 99%;
+    align-self: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0.25rem 0;
+  }
+
+  .footer .logo {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .FooterLinks {
+    margin-top: 0.5rem;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+  }
+
+  .FooterLinks img {
+    width: 16px;
+    height: 16px;
+  }
+  .FooterLinks a {
+    font-size: 12px;
+  }
+}
+
+/*FAQ Page*/
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem; 
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1da1f2;
+  margin-bottom: 1rem; 
+}
+
+.faq-item p {
+  color: #666;
+  display: none;
+}
+
+
+.faq-container h2 {
+  margin-bottom: 3rem;
+}
